@@ -10,4 +10,6 @@ h1, p{
 
 header {
     background-color: rgb(57, 124, 212);
+    color: aliceblue;
+    padding: 60px;
 }
