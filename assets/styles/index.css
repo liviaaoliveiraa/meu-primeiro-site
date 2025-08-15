@@ -88,3 +88,43 @@ li:hover {
     transform: translateX(5px);
     transition: all 0.3s ease;
 }
+
+contact {
+    display:block ;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+contact h2 {
+    margin-bottom: 8px;
+    font-size: 30px;
+    text-align: center;
+}
+
+contact p {
+    text-align: center;
+    font-size: 19px;
+}
+
+contact a {
+    color:rgb(88, 88, 155);
+    text-decoration: none;
+    font-weight: bold;
+    padding:0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 2px solid rgb(33, 33, 58);
+    border-radius: 25px;
+    display:inline-block;
+    transition: all 0.3s ease;
+
+}
+
+contact a:hover {
+    background-color: rgb(69, 75, 129);
+    color: white;
+    transform: translateY(-2px) ;
+}
