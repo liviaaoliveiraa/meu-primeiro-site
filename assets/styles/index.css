@@ -15,7 +15,6 @@ body {
     font-family: "Libre Baskerville";
 }
 
-
 header {
     background-color: rgb(100, 153, 223);
     color: aliceblue;
@@ -24,15 +23,14 @@ header {
 }
 
 main {
-    background-color:rgb(147, 174, 206) ;
+    background-color: rgb(147, 174, 206);
     flex: 1;
     padding: 48px 38px;
-    width:100%
-    
+    width: 100%;
 }
 
 about-section {
-    display:block ;
+    display: block;
     background-color: white;
     width: 80%;
     margin: 0 auto;
@@ -43,17 +41,16 @@ about-section {
 
 #titulo-sobre-mim {
     font-size: 30px;
-    border-bottom: 2px solid rgb(104, 142, 199) ;
-    margin-bottom: 10px ;
-   
+    border-bottom: 2px solid rgb(104, 142, 199);
+    margin-bottom: 10px;
 }
 
 .texto-sobre-mim {
     font-size: 15px;
 }
 
-hobbies{
-    display:block ;
+hobbies {
+    display: block;
     background-color: white;
     width: 80%;
     margin: 0 auto;
@@ -64,21 +61,21 @@ hobbies{
 
 #titulo-hobbies {
     font-size: 30px;
-    border-bottom: 2px solid rgb(104, 142, 199) ;
-    margin-bottom: 10px ;
+    border-bottom: 2px solid rgb(104, 142, 199);
+    margin-bottom: 10px;
 }
 
-ul{
+ul {
     list-style: none;
-    padding:0 ;
-    display:flex ;
-    gap: 12px
+    padding: 0;
+    display: flex;
+    gap: 12px;
 }
 
-li{
-    background-color: rgb(158, 184, 224) ;
+li {
+    background-color: rgb(158, 184, 224);
     padding: 12px;
-    border-left: 3px solid  rgb(0, 0, 0);
+    border-left: 3px solid rgb(0, 0, 0);
     font-size: 16px;
     min-width: 250px;
 }
@@ -90,7 +87,7 @@ li:hover {
 }
 
 contact {
-    display:block ;
+    display: block;
     background-color: white;
     width: 80%;
     margin: 0 auto;
@@ -111,32 +108,78 @@ contact p {
 }
 
 contact a {
-    color:rgb(88, 88, 155);
+    color: rgb(88, 88, 155);
     text-decoration: none;
     font-weight: bold;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
     margin: 0 0.5rem;
     border: 2px solid rgb(33, 33, 58);
     border-radius: 25px;
-    display:inline-block;
+    display: inline-block;
     transition: all 0.3s ease;
-
 }
 
 contact a:hover {
     background-color: rgb(69, 75, 129);
     color: white;
-    transform: translateY(-2px) ;
+    transform: translateY(-2px);
 }
 
 footer {
-    background-color:  rgb(100, 153, 223);
-    color:white;
-    text-align:center;
+    background-color: rgb(100, 153, 223);
+    color: white;
+    text-align: center;
     padding: 2rem;
-    width: 100%
+    width: 100%;
 }
 
 fotter p {
     font-size: 2rem;
+}
+
+/* * A partir daqui, as regras para responsividade são adicionadas.
+ * A regra principal é usar media queries para aplicar estilos diferentes
+ * em telas menores.
+ */
+
+/* Estilos para telas menores (largura máxima de 768px) */
+@media (max-width: 768px) {
+    /* Ajusta o padding para ser mais consistente em telas pequenas */
+    header,
+    main {
+        padding: 30px 20px;
+    }
+
+    /* Reduz a largura das seções para um tamanho adequado em telas pequenas */
+    about-section,
+    hobbies,
+    contact {
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* Reduz o tamanho das fontes para melhor visualização em dispositivos móveis */
+    #titulo-sobre-mim,
+    #titulo-hobbies {
+        font-size: 24px;
+    }
+
+    /* Altera a direção dos itens da lista de hobbies para que se empilhem verticalmente */
+    ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Remove a largura mínima dos itens da lista para que se ajustem à largura total */
+    li {
+        min-width: auto;
+    }
+
+    /* Ajusta o padding dos links de contato para melhor toque em telas de celular */
+    contact a {
+        padding: 0.8rem 1rem;
+        margin: 0.5rem 0;
+        display: block;
+        text-align: center;
+    }
 }
