@@ -128,3 +128,15 @@ contact a:hover {
     color: white;
     transform: translateY(-2px) ;
 }
+
+footer {
+    background-color:  rgb(100, 153, 223);
+    color:white;
+    text-align:center;
+    padding: 2rem;
+    width: 100%
+}
+
+fotter p {
+    font-size: 2rem;
+}
